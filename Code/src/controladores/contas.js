@@ -8,7 +8,7 @@ const listarContas = (req, res) => {
     }
 
     if (senha_banco !== banco.senha) {
-        return res.status(400).json({ mensagem: 'A senha do banco informada é inválida.' });
+        return res.status(400).json({ mensagem: 'A senha do banco informada é inválida. ' });
     }
 
     res.json(contas);
